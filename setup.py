@@ -1,6 +1,10 @@
 from distutils.core import setup, Extension
 
-c_module = Extension("geompy", sources=["src/validate/validate.cpp"])
+MODULE_BASE = "src"
+
+c_module = Extension("geompy", sources=[
+    f"{MODULE_BASE}/main.cpp",
+])
 
 setup(
     name="geompy",
