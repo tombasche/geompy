@@ -1,4 +1,4 @@
-#include "Python.h"
+#include "../../include/validate/duplicate.h"
 
 void coordsFromTuple(PyObject * t, double *coords) {
     double x = PyFloat_AsDouble(PyTuple_GetItem(t, 0));
