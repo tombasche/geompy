@@ -22,7 +22,7 @@ bool isDuplicateVertex(PyObject * inputArgs, int indexF, int indexN) {
     return false;
 }
 
-static PyObject * lineStringHasDuplicateVertex(PyObject * self, PyObject * args)
+PyObject * lineStringHasDuplicateVertex(PyObject * self, PyObject * args)
 {
     PyObject * input;
 
