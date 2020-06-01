@@ -22,8 +22,7 @@ bool isDuplicateVertex(PyObject * inputArgs, int indexF, int indexN) {
     return false;
 }
 
-static PyObject * lineStringHasDuplicateVertex(PyObject * self, PyObject * args)
-{
+static PyObject * lineStringHasDuplicateVertex(PyObject * self, PyObject * args) {
     PyObject * input;
 
     if (!PyArg_ParseTuple(args, "O", &input)) {

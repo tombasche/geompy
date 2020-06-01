@@ -1,5 +1,5 @@
 #include "Python.h"
-#include <cmath>
+#include <math.h>
 
 float newPrecision(double n, double i) {
     return floor(pow(10,i)*n)/pow(10,i);
