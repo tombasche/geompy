@@ -7,7 +7,7 @@ Python wrapper around C++ geometry operations
 
 # Usage
 ```
->>> from geompy import coords_has_spike
+>>> from geompy import line_string_has_duplicate_vertex
 >>> line_string_has_duplicate_vertex([(1,1), (1,1)])
 >>> True
 ```
