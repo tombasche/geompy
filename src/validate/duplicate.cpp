@@ -1,4 +1,4 @@
-#include "../../include/validate/duplicate.h"
+#include "Python.h"
 
 void coordsFromTuple(PyObject * t, double *coords) {
     double x = PyFloat_AsDouble(PyTuple_GetItem(t, 0));
@@ -22,7 +22,7 @@ bool isDuplicateVertex(PyObject * inputArgs, int indexF, int indexN) {
     return false;
 }
 
-PyObject * lineStringHasDuplicateVertex(PyObject * self, PyObject * args)
+static PyObject * lineStringHasDuplicateVertex(PyObject * self, PyObject * args)
 {
     PyObject * input;
 

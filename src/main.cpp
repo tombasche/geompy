@@ -1,6 +1,6 @@
 #include "Python.h"
-#include "../include/validate/duplicate.h"
-#include "../include/validate/spike.h"
+#include "validate/duplicate.cpp"
+#include "validate/spike.cpp"
 
 static PyMethodDef Methods[] = {
     { "line_string_has_duplicate_vertex", lineStringHasDuplicateVertex, METH_VARARGS, "Check a line string for duplicate points"},

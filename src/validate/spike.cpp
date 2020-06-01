@@ -1,11 +1,11 @@
-#include "../../include/validate/spike.h"
-
+#include "Python.h"
+#include <cmath>
 
 float newPrecision(double n, double i) {
     return floor(pow(10,i)*n)/pow(10,i);
 }
 
-PyObject * coordsHasSpike(PyObject * self, PyObject * args, PyObject * keywds) {
+static PyObject * coordsHasSpike(PyObject * self, PyObject * args, PyObject * keywds) {
     PyObject * coordArgs;
     double angle = 0.05;
     double roundPrecision = 8;
