@@ -1,11 +1,5 @@
 #include "Python.h"
-
-void coordsFromTuple(PyObject * t, double *coords) {
-    double x = PyFloat_AsDouble(PyTuple_GetItem(t, 0));
-    double y = PyFloat_AsDouble(PyTuple_GetItem(t, 1));
-    coords[0] = x;
-    coords[1] = y;
-}
+#include "../structures/coords.cpp"
 
 bool isDuplicateVertex(PyObject * inputArgs, int indexF, int indexN) {
     double coordsFirst [2];
